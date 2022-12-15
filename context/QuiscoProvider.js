@@ -71,7 +71,7 @@ export default function QuiscoProvider({children}) {
   const confirmarOrden = async (orden) => {
     orden.fecha = Date.now().toString()
     try {
-      await axios.post('/api/ordens', orden)
+      await axios.post('/api/ordenes', orden)
       setPedido([])
 
       setTimeout(() => {
